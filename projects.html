@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects — Erudita Zilbeari</title>
+  <meta name="description" content="A curated showcase of web, mobile, and Python projects by Erudita Zilbeari.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<a href="index.html" class="go-back" aria-label="Go back to portfolio">
+  Back
+</a>
+
+
+  <section id="projects" class="projects-section" aria-labelledby="projects-title">
+
+  <!-- Atmospheric Layers -->
+  <canvas id="projects-bg" class="projects-bg" aria-hidden="true"></canvas>
+  <div class="neural-grid" aria-hidden="true"></div>
+  <div class="projects-field" aria-hidden="true"></div>
+  <div class="projects-light" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="projects-header">
+    <span class="projects-eyebrow">Selected Work</span>
+    <h2 id="projects-title" class="projects-title">High-impact digital products</h2>
+    <p class="projects-intro">
+      Platforms, applications, and systems combining design precision,
+      engineering depth, and human-centered thinking.
+    </p>
+    <div class="projects-search">
+  <input
+    type="search"
+    id="projectSearch"
+    placeholder="Search projects…"
+    aria-label="Search projects"
+  />
+</div>
+
+  </header>
+
+  <!-- Filters -->
+<nav class="projects-filters" aria-label="Project category filters">
+  <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+  <button class="filter-btn" data-filter="web">Website</button>
+  <button class="filter-btn" data-filter="mobile">Mobile App</button>
+  <button class="filter-btn" data-filter="webapp">Web App</button>
+</nav>
+
+
+  <ol class="video-gallery" role="list">
+
+  <!-- CyberSafeX -->
+  <li class="video-item" data-category="web" data-rank="2">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/cybersafex.mp4">
+        <img src="images/project1/1.png" alt="CyberSafeX preview" loading="lazy">
+        <button class="play-btn" aria-label="Play CyberSafeX video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">CyberSafeX Platform</h3>
+<p class="card-desc">
+  <strong>Web Application.</strong> 
+  Interactive cybersecurity web platform visualizing 
+  threat models defense layers identity verification workflows 
+  enabling secure decision making through clear simulations and analytics interfaces.
+
+  <br><br>
+
+  <a
+    href="https://github.com/eru-z/cybersafex"
+    target="_blank"
+    rel="noopener"
+    class="card-link"
+  >
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project1" data-count="10" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project1">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- MindFlow -->
+  <li class="video-item" data-category="mobile" data-rank="4">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/mindflow.mp4">
+        <img src="images/project11/e.png" alt="MindFlow preview" loading="lazy">
+        <button class="play-btn" aria-label="Play MindFlow video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">MindFlow OS</h3>
+<p class="card-desc">
+  <strong>Mobile App.</strong> Cognitive productivity mobile application mapping focus tasks mental states into structured 
+  workflows supporting deep work clarity consistency and intentional daily execution habits.
+
+  <br><br>
+
+  <a
+    href="https://github.com/eru-z/mindflow-os"
+    target="_blank"
+    rel="noopener"
+    class="card-link"
+  >
+    View on GitHub
+  </a>
+</p>
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project11" data-count="12" data-ext="png">Screens</button>
+          <button class="desc-btn" data-project="project11">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- GreenBridge -->
+  <li class="video-item" data-category="web" data-rank="3">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/greenbridge.mp4">
+        <img src="images/project2/1.png" alt="GreenBridge preview" loading="lazy">
+        <button class="play-btn" aria-label="Play GreenBridge video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">GreenBridge</h3>
+<p class="card-desc">
+  <strong>Web Platform.</strong> Sustainability analytics web platform connecting behavioral data environmental impact metrics incentives
+   empowering users organizations to measure improve and sustain responsible actions outcomes.
+
+  <br><br>
+
+  <a
+    href="https://github.com/eru-z/green-bridge"
+    target="_blank"
+    rel="noopener"
+    class="card-link"
+  >
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project2" data-count="10" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project2">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Netflix -->
+  <li class="video-item" data-category="web" data-rank="12">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/netflix.mp4">
+        <img src="images/project3/1.png" alt="Netflix Clone preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Netflix Clone video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Netflix Clone</h3>
+<p class="card-desc">
+  <strong>Website UI Clone.</strong> Responsive streaming interface clone replicating modern layouts animations browsing flows demonstrating frontend architecture performance optimization and pixel accurate visual consistency across devices.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/netflix-clone"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project3" data-count="10" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project3">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Nutrition App -->
+  <li class="video-item" data-category="mobile">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/nutri.mp4">
+        <img src="images/project12/e.png" alt="Nutrition App preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Nutrition App video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Nutrition App</h3>
+<p class="card-desc">
+  <strong>Mobile App.</strong>Nutrition focused mobile application supporting meal planning calorie tracking nutritional insights habit formation promoting balanced lifestyles through simple data driven guidance systems.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/nutriflow-os"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project12" data-count="6" data-ext="png">Screens</button>
+          <button class="desc-btn" data-project="project12">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Bank -->
+  <li class="video-item" data-category="web" data-rank="9">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/bank.mp4">
+        <img src="images/project4/1.png" alt="Bank Website preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Bank Website video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Bank Website</h3>
+<p class="card-desc">
+  <strong>Corporate Website.</strong> Corporate banking website designed for trust accessibility and clarity delivering streamlined customer journeys compliant interfaces and consistent brand communication across digital channels.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/bank-website"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project4" data-count="10" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project4">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Legal Chatbot -->
+  <li class="video-item" data-category="web" data-rank="7">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/chatbot.mp4">
+        <img src="images/project5/1.png" alt="Legal Chatbot preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Legal Chatbot video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Legal Chatbot</h3>
+<p class="card-desc">
+  <strong>AI Web Application.</strong> AI powered legal web assistant helping educators interpret regulations student rights policies delivering contextual guidance aligned with institutional standards.
+
+  <br><br>
+
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project5" data-count="10" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project5">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Chanel -->
+  <li class="video-item" data-category="web" data-rank="13">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/chanel.mp4">
+        <img src="images/project6/1.png" alt="Chanel Clone preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Chanel Clone video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Chanel Clone</h3>
+<p class="card-desc">
+  <strong>Luxury Website UI.</strong> Luxury fashion website clone emphasizing typography spacing imagery motion creating refined digital presence reflecting premium aesthetics and editorial brand storytelling principles online.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/chanel-ui"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project6" data-count="10" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project6">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- FitPrime -->
+  <li class="video-item" data-category="web" data-rank="10">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/gym.mp4">
+        <img src="images/project8/1.png" alt="FitPrime preview" loading="lazy">
+        <button class="play-btn" aria-label="Play FitPrime video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">FitPrime</h3>
+<p class="card-desc">
+  <strong>Website.</strong> Modern fitness club website presenting programs trainers schedules memberships facilities supporting discovery engagement and conversion through clean responsive design systems and content.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/gym-ui"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project8" data-count="6" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project8">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Coffee -->
+  <li class="video-item" data-category="web" data-rank="11">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/coffee.mp4">
+        <img src="images/project7/1.png" alt="Coffee Website preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Coffee Website video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Coffee Website</h3>
+<p class="card-desc">
+  <strong>Brand Website.</strong> Story driven coffee brand website highlighting atmosphere menu craft values delivering immersive identity experiences through warm visuals and narrative layouts online presence.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/coffee-ui"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project7" data-count="8" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project7">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- E-Commerce -->
+  <li class="video-item" data-category="web" data-rank="6">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/shopx.mp4">
+        <img src="images/project9/1.png" alt="E-Commerce Shop preview" loading="lazy">
+        <button class="play-btn" aria-label="Play E-Commerce Shop video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">E-Commerce Shop</h3>
+<p class="card-desc">
+  <strong>E-Commerce Website.</strong> Complete e commerce website delivering product discovery filtering cart checkout flows optimized for usability scalability and conversion focused performance metrics analytics growth.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/ecommerce-ui"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub 
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project9" data-count="5" data-ext="png">Gallery</button>
+          <button class="desc-btn" data-project="project9">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <!-- Expense Tracker -->
+  <li class="video-item" data-category="mobile" data-rank="8">
+    <article class="video-card">
+      <div class="video-wrap" data-video="videos/expense.mp4">
+        <img src="images/project15/1.png" alt="Expense Tracker preview" loading="lazy">
+        <button class="play-btn" aria-label="Play Expense Tracker video">▶</button>
+      </div>
+      <div class="card-body">
+        <h3 class="caption">Expense Tracker</h3>
+<p class="card-desc">
+  <strong>Mobile App.</strong> Personal finance mobile application enabling expense logging spending analysis budgeting habits providing clarity control and financial awareness over time through visual summaries.
+
+  <br><br>
+
+  <a href="https://github.com/eru-z/expense-tracker"
+     target="_blank" rel="noopener"
+     class="card-link">
+    View on GitHub
+  </a>
+</p>
+
+        <div class="card-actions">
+          <button class="photos-btn" data-folder="project15" data-count="11" data-ext="png">Screens</button>
+          <button class="desc-btn" data-project="project15">Details</button>
+        </div>
+      </div>
+    </article>
+  </li>
+
+  <li class="video-item" data-category="webapp" data-rank="1">
+  <article class="video-card">
+    <div class="video-wrap" data-video="videos/saas.mp4">
+      <img src="images/project13/1.png" alt="SaaS E-commerce platform preview" loading="lazy">
+      <button class="play-btn" aria-label="Play SaaS E-commerce demo">▶</button>
+    </div>
+
+    <div class="card-body">
+      <h3 class="caption">SaaS E-commerce Platform</h3>
+
+      <p class="card-desc">
+        <strong>Web Application.</strong>
+        Full-stack SaaS e-commerce system built with <strong>React JS</strong> and
+        <strong>PHP (REST API)</strong>. Includes product management, user authentication,
+        shopping cart, order processing, admin dashboard, and role-based access.
+        Designed for scalability, performance, and real-world business use.
+
+        <br><br>
+
+        <a
+          href="https://github.com/eru-z/ecommerce-saas-react-php"
+          target="_blank"
+          rel="noopener"
+          class="card-link"
+        >
+          View on GitHub 
+        </a>
+      </p>
+
+      <div class="card-actions">
+        <button
+          class="photos-btn"
+          data-folder="project13"
+          data-count="12"
+          data-ext="png"
+        >
+          Gallery
+        </button>
+
+        <button
+          class="desc-btn"
+          data-project="project13"
+        >
+          Details
+        </button>
+      </div>
+    </div>
+  </article>
+</li>
+
+  <li class="video-item" data-category="webapp" data-rank="5">
+  <article class="video-card">
+    <div class="video-wrap" data-video="videos/task.mp4">
+      <img src="images/project14/1.png" alt="Task Management App preview" loading="lazy">
+      <button class="play-btn" aria-label="Play Task Management demo">▶</button>
+    </div>
+
+    <div class="card-body">
+      <h3 class="caption">Task Management System</h3>
+
+      <p class="card-desc">
+        <strong>Web Application.</strong>
+        Task management system built with <strong>React JS</strong> and
+        <strong>PHP (REST API)</strong>. Features user authentication, task creation,
+        status tracking (To Do / In Progress / Done), priorities, due dates,
+        and a clean dashboard for productivity-focused workflows.
+
+        <br><br>
+
+        <a
+          href="https://github.com/eru-z/dash-react-admin"
+          target="_blank"
+          rel="noopener"
+          class="card-link"
+        >
+          View on GitHub 
+        </a>
+      </p>
+
+      <div class="card-actions">
+        <button
+          class="photos-btn"
+          data-folder="project14"
+          data-count="8"
+          data-ext="png"
+        >
+          Gallery
+        </button>
+
+        <button
+          class="desc-btn"
+          data-project="project14"
+        >
+          Details
+        </button>
+      </div>
+    </div>
+  </article>
+</li>
+
+</ol>
+
+
+
+</section>
+
+<footer class="signature-footer">
+  <div class="footer-energy"></div>
+  <div class="footer-particles"></div>
+
+  <div class="footer-inner">
+
+    <div class="footer-top">
+      <!-- BRAND -->
+      <div>
+        <div class="footer-logo">EZ</div>
+        <p class="footer-manifesto">
+          Designing and engineering high-impact digital products with clarity,
+          precision, and intent.
+        </p>
+      </div>
+
+      <!-- NAV -->
+      <div>
+        <span class="footer-label">Navigate</span>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+<a href="#capabilities">Skills</a>
+          <a href="#private-console">Contact</a>
+        </nav>
+      </div>
+
+      <!-- CONTACT -->
+      <div>
+        <span class="footer-label">Contact</span>
+        <div class="footer-contact">
+          <a href="mailto:eruditazilbearids@gmail.com">eruditazilbearids@gmail.com</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+
+      <!-- STATUS -->
+      <div>
+        <span class="footer-label">Status</span>
+        <div class="footer-status">
+          <span class="dot"></span>
+          Available for select work
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Erudita Zilbeari</span>
+      <span>Built with intent</span>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+    let t;
+window.addEventListener("scroll", () => {
+  document.body.classList.add("animating","scrolling");
+  clearTimeout(t);
+  t = setTimeout(() => {
+    document.body.classList.remove("animating","scrolling");
+  }, 120);
+}, { passive:true });
+</script>
+
+
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+<script>
+  const btn = document.querySelector('.scroll-top');
+
+window.addEventListener('scroll', () => {
+  btn.classList.toggle('show', window.scrollY > 400);
+});
+
+btn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+</script>
+
+<!-- ================= IMAGE LIGHTBOX ================= -->
+<div id="lightbox" class="lightbox">
+  <div class="lightbox-frame">
+
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <button class="lightbox-prev" aria-label="Previous">‹</button>
+
+    <img id="lightbox-img" alt="">
+
+    <button class="lightbox-next" aria-label="Next">›</button>
+
+  </div>
+</div>
+
+<!-- ================= VIDEO LIGHTBOX ================= -->
+<div id="videoLightbox" class="video-lightbox">
+  <div class="lightbox-frame">
+
+    <button class="lightbox-close" aria-label="Close">×</button>
+
+    <video
+      id="lightboxVideo"
+      controls
+      playsinline
+      preload="metadata">
+    </video>
+
+  </div>
+</div>
+
+<!-- ================= DESCRIPTION MODAL ================= -->
+<div id="descModal" class="desc-modal">
+  <div class="desc-box">
+    <button class="close">×</button>
+    <div class="desc-content">
+      <h3 id="descTitle"></h3>
+      <p id="descText"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const searchInput = document.getElementById("projectSearch");
+const projectItems = document.querySelectorAll(".video-item");
+
+searchInput.addEventListener("input", () => {
+  const query = searchInput.value.toLowerCase().trim();
+
+  projectItems.forEach(item => {
+    const title = item.querySelector(".caption")?.textContent.toLowerCase() || "";
+    const desc  = item.querySelector(".card-desc")?.textContent.toLowerCase() || "";
+
+    const matches = title.includes(query) || desc.includes(query);
+
+    item.style.display = matches ? "" : "none";
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const gallery = document.querySelector(".video-gallery");
+  const items = Array.from(gallery.querySelectorAll(".video-item"));
+
+  items
+    .sort((a, b) => Number(a.dataset.rank) - Number(b.dataset.rank))
+    .forEach(item => gallery.appendChild(item));
+});
+</script>
+
+
+<script src="projects.js" defer></script>
+</body>
+</html>
