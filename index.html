@@ -545,20 +545,27 @@ form.addEventListener("submit", async (e) => {
   statusEl.className = "form-status";
   button.disabled = true;
 
-  const formData = new URLSearchParams(new FormData(form));
+  const honeypot = form.querySelector('input[name="company"]').value;
+  if (honeypot) return; // bot detected
+
+  const payload = {
+    name: form.name.value.trim(),
+    email: form.email.value.trim(),
+    message: form.message.value.trim()
+  };
 
   try {
-    const res = await fetch("/send", {
+    const res = await fetch("/api/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
+        "Content-Type": "application/json"
       },
-      body: formData.toString()
+      body: JSON.stringify(payload)
     });
 
     const data = await res.json();
 
-    if (data.status === "ok") {
+    if (res.ok && data.success) {
       statusEl.textContent = "✅ Access request transmitted successfully.";
       statusEl.classList.add("success");
       form.reset();
@@ -573,6 +580,7 @@ form.addEventListener("submit", async (e) => {
   }
 });
 </script>
+
 
 
 
